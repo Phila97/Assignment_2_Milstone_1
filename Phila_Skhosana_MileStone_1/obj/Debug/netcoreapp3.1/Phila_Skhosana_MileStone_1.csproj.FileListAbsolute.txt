@@ -1,0 +1,17 @@
+C:\Users\Thabo Skosana\Desktop\Phila SKhosana Programming 251\Phila_Skhosana_MileStone_1\bin\Debug\netcoreapp3.1\Phila_Skhosana_MileStone_1.exe
+C:\Users\Thabo Skosana\Desktop\Phila SKhosana Programming 251\Phila_Skhosana_MileStone_1\bin\Debug\netcoreapp3.1\Phila_Skhosana_MileStone_1.deps.json
+C:\Users\Thabo Skosana\Desktop\Phila SKhosana Programming 251\Phila_Skhosana_MileStone_1\bin\Debug\netcoreapp3.1\Phila_Skhosana_MileStone_1.runtimeconfig.json
+C:\Users\Thabo Skosana\Desktop\Phila SKhosana Programming 251\Phila_Skhosana_MileStone_1\bin\Debug\netcoreapp3.1\Phila_Skhosana_MileStone_1.runtimeconfig.dev.json
+C:\Users\Thabo Skosana\Desktop\Phila SKhosana Programming 251\Phila_Skhosana_MileStone_1\bin\Debug\netcoreapp3.1\Phila_Skhosana_MileStone_1.dll
+C:\Users\Thabo Skosana\Desktop\Phila SKhosana Programming 251\Phila_Skhosana_MileStone_1\bin\Debug\netcoreapp3.1\Phila_Skhosana_MileStone_1.pdb
+C:\Users\Thabo Skosana\Desktop\Phila SKhosana Programming 251\Phila_Skhosana_MileStone_1\obj\Debug\netcoreapp3.1\Phila_Skhosana_MileStone_1.csproj.AssemblyReference.cache
+C:\Users\Thabo Skosana\Desktop\Phila SKhosana Programming 251\Phila_Skhosana_MileStone_1\obj\Debug\netcoreapp3.1\Phila_Skhosana_MileStone_1.Login_Form.resources
+C:\Users\Thabo Skosana\Desktop\Phila SKhosana Programming 251\Phila_Skhosana_MileStone_1\obj\Debug\netcoreapp3.1\Phila_Skhosana_MileStone_1.Register.resources
+C:\Users\Thabo Skosana\Desktop\Phila SKhosana Programming 251\Phila_Skhosana_MileStone_1\obj\Debug\netcoreapp3.1\Phila_Skhosana_MileStone_1.Student_DEtails.resources
+C:\Users\Thabo Skosana\Desktop\Phila SKhosana Programming 251\Phila_Skhosana_MileStone_1\obj\Debug\netcoreapp3.1\Phila_Skhosana_MileStone_1.csproj.GenerateResource.cache
+C:\Users\Thabo Skosana\Desktop\Phila SKhosana Programming 251\Phila_Skhosana_MileStone_1\obj\Debug\netcoreapp3.1\Phila_Skhosana_MileStone_1.AssemblyInfoInputs.cache
+C:\Users\Thabo Skosana\Desktop\Phila SKhosana Programming 251\Phila_Skhosana_MileStone_1\obj\Debug\netcoreapp3.1\Phila_Skhosana_MileStone_1.AssemblyInfo.cs
+C:\Users\Thabo Skosana\Desktop\Phila SKhosana Programming 251\Phila_Skhosana_MileStone_1\obj\Debug\netcoreapp3.1\Phila_Skhosana_MileStone_1.csproj.CoreCompileInputs.cache
+C:\Users\Thabo Skosana\Desktop\Phila SKhosana Programming 251\Phila_Skhosana_MileStone_1\obj\Debug\netcoreapp3.1\Phila_Skhosana_MileStone_1.dll
+C:\Users\Thabo Skosana\Desktop\Phila SKhosana Programming 251\Phila_Skhosana_MileStone_1\obj\Debug\netcoreapp3.1\Phila_Skhosana_MileStone_1.pdb
+C:\Users\Thabo Skosana\Desktop\Phila SKhosana Programming 251\Phila_Skhosana_MileStone_1\obj\Debug\netcoreapp3.1\Phila_Skhosana_MileStone_1.genruntimeconfig.cache
