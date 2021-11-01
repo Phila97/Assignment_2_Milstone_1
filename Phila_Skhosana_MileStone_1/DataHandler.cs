@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Data.SqlClient;
+using System.Data;
 
 namespace Phila_Skhosana_MileStone_1
 {
@@ -12,6 +13,17 @@ namespace Phila_Skhosana_MileStone_1
         public DataHandler()
         {
 
+        }
+
+        public DataSet ShowData()
+        {
+            string sql = "SELECT * FROM tblStudents";
+            SqlDataAdapter data_adapter = new SqlDataAdapter(sql, conn);
+            DataSet ds = new DataSet();
+            conn.Open();
+            data_adapter.Fill(ds, "tblStudents");
+            conn.Close();
+            return ds;
         }
 
         //Insert Method

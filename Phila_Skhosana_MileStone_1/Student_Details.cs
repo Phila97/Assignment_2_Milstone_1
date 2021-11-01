@@ -12,10 +12,16 @@ namespace Phila_Skhosana_MileStone_1
 {
     public partial class Student_DEtails : Form
     {
+        public void ShowInGrid()
+        {
+            DataHandler dh = new DataHandler();
+            dataGridView1.DataSource = dh.ShowData();
+            dataGridView1.DataMember = "tblStudents";
+        }
         public Student_DEtails()
         {
             InitializeComponent();
-
+            ShowInGrid();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -48,8 +54,13 @@ namespace Phila_Skhosana_MileStone_1
                 //Create data handler
                 DataHandler dh = new DataHandler();
 
+                //Insert the data using the datahandler insert procedure
                 dh.Insert(name, surname, gender, phone, address, modules_codes);
+                //Refress the data grid view
+                //dataGridView1.DataSource = dh.ShowData();
                 MessageBox.Show("Successfully inserted data");
+                ShowInGrid();
+
             }
             catch (Exception exc)
             {
