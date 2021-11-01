@@ -96,5 +96,28 @@ namespace Phila_Skhosana_MileStone_1
             }
             
         }
+
+        //Update function
+        public void Update(string search, string first_name, string last_name, string gender, string phone, string address, string module_code)
+        {
+            try
+            {
+                //Open connection
+                conn.Open();
+                Console.WriteLine("Connection open");
+
+                //Update query
+                SqlDataAdapter cmd = new SqlDataAdapter();
+                cmd.UpdateCommand = new SqlCommand($"UPDATE tblStudents SET FirstName = {first_name}, LastName = {last_name}, Gender = {gender}, Phone = {phone}, Address = {address}, ModulesCodes = {module_code} WHERE StudentNumber = {search}");
+                cmd.UpdateCommand.Connection = conn;
+
+                Console.Write("Update was successfull");
+            }
+            catch (Exception exc)
+            {
+                Console.Write($"Err {exc}");
+                throw;
+            }
+        }
     }
 }
