@@ -102,7 +102,24 @@ namespace Phila_Skhosana_MileStone_1
                 dataGridView1.DataMember = "tblStudents";
                 dataGridView1.Rows[0].Selected = true;
 
-
+                //Populate the text boxes
+                if (dataGridView1.SelectedRows.Count > 0)//Make sur that atleast 1 row is selected
+                {
+                    //Store the values in variables
+                    string name = dataGridView1.SelectedRows[0].Cells[1].Value + string.Empty;
+                    string surname = dataGridView1.SelectedRows[0].Cells[2].Value + string.Empty;
+                    string gender = dataGridView1.SelectedRows[0].Cells[3].Value + string.Empty;
+                    string phone = dataGridView1.SelectedRows[0].Cells[4].Value + string.Empty;
+                    string address = dataGridView1.SelectedRows[0].Cells[5].Value + string.Empty;
+                    string modules_codes = dataGridView1.SelectedRows[0].Cells[6].Value + string.Empty;
+                    //Populate the fields
+                    txtNameA.Text = name;
+                    txtSurameA.Text = surname;
+                    cbGenderA.Text = gender;
+                    txtPhoneA.Text = phone;
+                    txtAddressA.Text = address;
+                    cbModuleCodesA.Text = modules_codes;
+                }
             }
             catch (Exception exc)
             {
