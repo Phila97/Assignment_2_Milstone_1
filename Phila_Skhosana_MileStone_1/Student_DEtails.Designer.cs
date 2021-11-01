@@ -68,10 +68,10 @@ namespace Phila_Skhosana_MileStone_1
             // 
             // addbtn
             // 
-            this.addbtn.Location = new System.Drawing.Point(679, 350);
+            this.addbtn.Location = new System.Drawing.Point(32, 379);
             this.addbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.addbtn.Name = "addbtn";
-            this.addbtn.Size = new System.Drawing.Size(82, 22);
+            this.addbtn.Size = new System.Drawing.Size(99, 43);
             this.addbtn.TabIndex = 1;
             this.addbtn.Text = "Add";
             this.addbtn.UseVisualStyleBackColor = true;
@@ -119,6 +119,7 @@ namespace Phila_Skhosana_MileStone_1
             // 
             // studentNUmtxt
             // 
+            this.studentNUmtxt.Enabled = false;
             this.studentNUmtxt.Location = new System.Drawing.Point(165, 59);
             this.studentNUmtxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.studentNUmtxt.Name = "studentNUmtxt";

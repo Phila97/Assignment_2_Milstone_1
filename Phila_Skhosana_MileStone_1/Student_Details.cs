@@ -15,6 +15,7 @@ namespace Phila_Skhosana_MileStone_1
         public Student_DEtails()
         {
             InitializeComponent();
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -34,7 +35,31 @@ namespace Phila_Skhosana_MileStone_1
 
         private void addbtn_Click(object sender, EventArgs e)
         {
+            try
+            {
+                //Collect the input data
+                string name = nametxt.Text;
+                string surname = surnametxt.Text;
+                string gender = cbGender.Text;
+                string phone = phonetxt.Text;
+                string address = addresstxt.Text;
+                string modules_codes = cbModuleCodes.Text;
 
+                //Create data handler
+                DataHandler dh = new DataHandler();
+
+                dh.Insert(name, surname, gender, phone, address, modules_codes);
+                MessageBox.Show("Successfully inserted data");
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show($"An error occured");
+                Console.WriteLine($"Error: {exc}");
+                throw;
+            }
+            
+
+            
         }
     }
 }

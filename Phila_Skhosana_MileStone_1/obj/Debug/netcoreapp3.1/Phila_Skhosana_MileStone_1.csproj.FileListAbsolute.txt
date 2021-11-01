@@ -33,3 +33,9 @@ Z:\PRG252\Assignement\Assignment_2_Milstone_1\Phila_Skhosana_MileStone_1\obj\Deb
 Z:\PRG252\Assignement\Assignment_2_Milstone_1\Phila_Skhosana_MileStone_1\obj\Debug\netcoreapp3.1\Phila_Skhosana_MileStone_1.dll
 Z:\PRG252\Assignement\Assignment_2_Milstone_1\Phila_Skhosana_MileStone_1\obj\Debug\netcoreapp3.1\Phila_Skhosana_MileStone_1.pdb
 Z:\PRG252\Assignement\Assignment_2_Milstone_1\Phila_Skhosana_MileStone_1\obj\Debug\netcoreapp3.1\Phila_Skhosana_MileStone_1.genruntimeconfig.cache
+Z:\PRG252\Assignement\Assignment_2_Milstone_1\Phila_Skhosana_MileStone_1\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+Z:\PRG252\Assignement\Assignment_2_Milstone_1\Phila_Skhosana_MileStone_1\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+Z:\PRG252\Assignement\Assignment_2_Milstone_1\Phila_Skhosana_MileStone_1\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+Z:\PRG252\Assignement\Assignment_2_Milstone_1\Phila_Skhosana_MileStone_1\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+Z:\PRG252\Assignement\Assignment_2_Milstone_1\Phila_Skhosana_MileStone_1\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+Z:\PRG252\Assignement\Assignment_2_Milstone_1\Phila_Skhosana_MileStone_1\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
