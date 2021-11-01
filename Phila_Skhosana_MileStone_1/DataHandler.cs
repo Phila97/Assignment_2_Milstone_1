@@ -26,6 +26,18 @@ namespace Phila_Skhosana_MileStone_1
             return ds;
         }
 
+        //Search Method
+        public DataSet Search(string search)
+        {
+            string sql = $"SELECT * FROM tblStudents WHERE StudentNumber={search}";
+            SqlDataAdapter data_adapter = new SqlDataAdapter(sql, conn);
+            DataSet ds = new DataSet();
+            conn.Open();
+            data_adapter.Fill(ds, "tblStudents");
+            conn.Close();
+            return ds;
+        }
+
         //Insert Method
         public void Insert(string first_name, string last_name, string gender, string phone, string address, string module_code)
         {

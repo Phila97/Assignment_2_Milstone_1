@@ -60,8 +60,9 @@ namespace Phila_Skhosana_MileStone_1
             this.txtPhoneA = new System.Windows.Forms.TextBox();
             this.txtSurameA = new System.Windows.Forms.TextBox();
             this.txtNameA = new System.Windows.Forms.TextBox();
-            this.txtStudentNumberA = new System.Windows.Forms.TextBox();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
+            this.btnSearch = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -356,14 +357,14 @@ namespace Phila_Skhosana_MileStone_1
             this.txtNameA.Size = new System.Drawing.Size(188, 23);
             this.txtNameA.TabIndex = 26;
             // 
-            // txtStudentNumberA
+            // txtSearch
             // 
-            this.txtStudentNumberA.Location = new System.Drawing.Point(844, 49);
-            this.txtStudentNumberA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtStudentNumberA.Name = "txtStudentNumberA";
-            this.txtStudentNumberA.Size = new System.Drawing.Size(321, 23);
-            this.txtStudentNumberA.TabIndex = 25;
-            this.txtStudentNumberA.TextChanged += new System.EventHandler(this.txtStudentNumberA_TextChanged);
+            this.txtSearch.Location = new System.Drawing.Point(844, 49);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(237, 23);
+            this.txtSearch.TabIndex = 25;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtStudentNumberA_TextChanged);
             // 
             // label16
             // 
@@ -375,11 +376,23 @@ namespace Phila_Skhosana_MileStone_1
             this.label16.Text = "Search Student Number";
             this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
+            // btnSearch
+            // 
+            this.btnSearch.Location = new System.Drawing.Point(1101, 43);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(73, 32);
+            this.btnSearch.TabIndex = 39;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
             // Student_DEtails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1234, 509);
+            this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.cbGenderA);
             this.Controls.Add(this.cbModuleCodesA);
             this.Controls.Add(this.label9);
@@ -393,7 +406,7 @@ namespace Phila_Skhosana_MileStone_1
             this.Controls.Add(this.txtPhoneA);
             this.Controls.Add(this.txtSurameA);
             this.Controls.Add(this.txtNameA);
-            this.Controls.Add(this.txtStudentNumberA);
+            this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.cbGender);
             this.Controls.Add(this.cbModuleCodes);
@@ -455,8 +468,9 @@ namespace Phila_Skhosana_MileStone_1
         private System.Windows.Forms.TextBox txtPhoneA;
         private System.Windows.Forms.TextBox txtSurameA;
         private System.Windows.Forms.TextBox txtNameA;
-        private System.Windows.Forms.TextBox txtStudentNumberA;
+        private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Button btnSearch;
     }
 }
 
