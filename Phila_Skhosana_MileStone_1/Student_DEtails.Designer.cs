@@ -31,11 +31,9 @@ namespace Phila_Skhosana_MileStone_1
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.addbtn = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.updatebtn = new System.Windows.Forms.Button();
             this.deletebtn = new System.Windows.Forms.Button();
             this.viewbtn = new System.Windows.Forms.Button();
-            this.studentNUmtxt = new System.Windows.Forms.TextBox();
             this.nametxt = new System.Windows.Forms.TextBox();
             this.surnametxt = new System.Windows.Forms.TextBox();
             this.phonetxt = new System.Windows.Forms.TextBox();
@@ -47,18 +45,30 @@ namespace Phila_Skhosana_MileStone_1
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.cbModuleCodes = new System.Windows.Forms.ComboBox();
             this.cbGender = new System.Windows.Forms.ComboBox();
+            this.cbGenderA = new System.Windows.Forms.ComboBox();
+            this.cbModuleCodesA = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtAddressA = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtPhoneA = new System.Windows.Forms.TextBox();
+            this.txtSurameA = new System.Windows.Forms.TextBox();
+            this.txtNameA = new System.Windows.Forms.TextBox();
+            this.txtStudentNumberA = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(679, 54);
+            this.dataGridView1.Location = new System.Drawing.Point(405, 97);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
@@ -68,7 +78,7 @@ namespace Phila_Skhosana_MileStone_1
             // 
             // addbtn
             // 
-            this.addbtn.Location = new System.Drawing.Point(32, 379);
+            this.addbtn.Location = new System.Drawing.Point(32, 434);
             this.addbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.addbtn.Name = "addbtn";
             this.addbtn.Size = new System.Drawing.Size(99, 43);
@@ -77,54 +87,36 @@ namespace Phila_Skhosana_MileStone_1
             this.addbtn.UseVisualStyleBackColor = true;
             this.addbtn.Click += new System.EventHandler(this.addbtn_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(30, 64);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 15);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Student Number :";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
             // updatebtn
             // 
-            this.updatebtn.Location = new System.Drawing.Point(788, 350);
+            this.updatebtn.Location = new System.Drawing.Point(846, 411);
             this.updatebtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.updatebtn.Name = "updatebtn";
-            this.updatebtn.Size = new System.Drawing.Size(82, 22);
+            this.updatebtn.Size = new System.Drawing.Size(97, 44);
             this.updatebtn.TabIndex = 3;
             this.updatebtn.Text = "Update";
             this.updatebtn.UseVisualStyleBackColor = true;
+            this.updatebtn.Click += new System.EventHandler(this.updatebtn_Click);
             // 
             // deletebtn
             // 
-            this.deletebtn.Location = new System.Drawing.Point(895, 350);
+            this.deletebtn.Location = new System.Drawing.Point(1068, 411);
             this.deletebtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.deletebtn.Name = "deletebtn";
-            this.deletebtn.Size = new System.Drawing.Size(82, 22);
+            this.deletebtn.Size = new System.Drawing.Size(97, 44);
             this.deletebtn.TabIndex = 4;
             this.deletebtn.Text = "Delete";
             this.deletebtn.UseVisualStyleBackColor = true;
             // 
             // viewbtn
             // 
-            this.viewbtn.Location = new System.Drawing.Point(1012, 350);
+            this.viewbtn.Location = new System.Drawing.Point(553, 411);
             this.viewbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.viewbtn.Name = "viewbtn";
-            this.viewbtn.Size = new System.Drawing.Size(82, 22);
+            this.viewbtn.Size = new System.Drawing.Size(115, 44);
             this.viewbtn.TabIndex = 5;
             this.viewbtn.Text = "View";
             this.viewbtn.UseVisualStyleBackColor = true;
-            // 
-            // studentNUmtxt
-            // 
-            this.studentNUmtxt.Enabled = false;
-            this.studentNUmtxt.Location = new System.Drawing.Point(165, 59);
-            this.studentNUmtxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.studentNUmtxt.Name = "studentNUmtxt";
-            this.studentNUmtxt.Size = new System.Drawing.Size(188, 23);
-            this.studentNUmtxt.TabIndex = 6;
             // 
             // nametxt
             // 
@@ -221,27 +213,6 @@ namespace Phila_Skhosana_MileStone_1
             this.label8.TabIndex = 19;
             this.label8.Text = "Insert Image :";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(398, 54);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(237, 178);
-            this.pictureBox1.TabIndex = 20;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(993, 400);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(82, 22);
-            this.button1.TabIndex = 21;
-            this.button1.Text = "Exit";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // cbModuleCodes
             // 
             this.cbModuleCodes.FormattingEnabled = true;
@@ -266,15 +237,165 @@ namespace Phila_Skhosana_MileStone_1
             this.cbGender.Size = new System.Drawing.Size(188, 23);
             this.cbGender.TabIndex = 23;
             // 
+            // cbGenderA
+            // 
+            this.cbGenderA.FormattingEnabled = true;
+            this.cbGenderA.Items.AddRange(new object[] {
+            "Male",
+            "Female",
+            "Other"});
+            this.cbGenderA.Location = new System.Drawing.Point(977, 209);
+            this.cbGenderA.Name = "cbGenderA";
+            this.cbGenderA.Size = new System.Drawing.Size(188, 23);
+            this.cbGenderA.TabIndex = 38;
+            // 
+            // cbModuleCodesA
+            // 
+            this.cbModuleCodesA.FormattingEnabled = true;
+            this.cbModuleCodesA.Items.AddRange(new object[] {
+            "BCom",
+            "DIT",
+            "CIT"});
+            this.cbModuleCodesA.Location = new System.Drawing.Point(977, 323);
+            this.cbModuleCodesA.Name = "cbModuleCodesA";
+            this.cbModuleCodesA.Size = new System.Drawing.Size(188, 23);
+            this.cbModuleCodesA.TabIndex = 37;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(844, 375);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(78, 15);
+            this.label9.TabIndex = 36;
+            this.label9.Text = "Insert Image :";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(842, 331);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(95, 15);
+            this.label10.TabIndex = 35;
+            this.label10.Text = "Modules Codes :";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(842, 295);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(55, 15);
+            this.label11.TabIndex = 34;
+            this.label11.Text = "Address :";
+            // 
+            // txtAddressA
+            // 
+            this.txtAddressA.Location = new System.Drawing.Point(977, 290);
+            this.txtAddressA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtAddressA.Name = "txtAddressA";
+            this.txtAddressA.Size = new System.Drawing.Size(188, 23);
+            this.txtAddressA.TabIndex = 33;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(844, 256);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(47, 15);
+            this.label12.TabIndex = 32;
+            this.label12.Text = "Phone :";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(842, 212);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(51, 15);
+            this.label13.TabIndex = 31;
+            this.label13.Text = "Gender :";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(842, 176);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(60, 15);
+            this.label14.TabIndex = 30;
+            this.label14.Text = "Surname :";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(842, 140);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(45, 15);
+            this.label15.TabIndex = 29;
+            this.label15.Text = "Name :";
+            // 
+            // txtPhoneA
+            // 
+            this.txtPhoneA.Location = new System.Drawing.Point(977, 251);
+            this.txtPhoneA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPhoneA.Name = "txtPhoneA";
+            this.txtPhoneA.Size = new System.Drawing.Size(188, 23);
+            this.txtPhoneA.TabIndex = 28;
+            // 
+            // txtSurameA
+            // 
+            this.txtSurameA.Location = new System.Drawing.Point(977, 171);
+            this.txtSurameA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtSurameA.Name = "txtSurameA";
+            this.txtSurameA.Size = new System.Drawing.Size(188, 23);
+            this.txtSurameA.TabIndex = 27;
+            // 
+            // txtNameA
+            // 
+            this.txtNameA.Location = new System.Drawing.Point(977, 135);
+            this.txtNameA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtNameA.Name = "txtNameA";
+            this.txtNameA.Size = new System.Drawing.Size(188, 23);
+            this.txtNameA.TabIndex = 26;
+            // 
+            // txtStudentNumberA
+            // 
+            this.txtStudentNumberA.Enabled = false;
+            this.txtStudentNumberA.Location = new System.Drawing.Point(977, 92);
+            this.txtStudentNumberA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtStudentNumberA.Name = "txtStudentNumberA";
+            this.txtStudentNumberA.Size = new System.Drawing.Size(188, 23);
+            this.txtStudentNumberA.TabIndex = 25;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(842, 97);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(101, 15);
+            this.label16.TabIndex = 24;
+            this.label16.Text = "Student Number :";
+            // 
             // Student_DEtails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1148, 448);
+            this.ClientSize = new System.Drawing.Size(1234, 509);
+            this.Controls.Add(this.cbGenderA);
+            this.Controls.Add(this.cbModuleCodesA);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.txtAddressA);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.txtPhoneA);
+            this.Controls.Add(this.txtSurameA);
+            this.Controls.Add(this.txtNameA);
+            this.Controls.Add(this.txtStudentNumberA);
+            this.Controls.Add(this.label16);
             this.Controls.Add(this.cbGender);
             this.Controls.Add(this.cbModuleCodes);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -286,18 +407,15 @@ namespace Phila_Skhosana_MileStone_1
             this.Controls.Add(this.phonetxt);
             this.Controls.Add(this.surnametxt);
             this.Controls.Add(this.nametxt);
-            this.Controls.Add(this.studentNUmtxt);
             this.Controls.Add(this.viewbtn);
             this.Controls.Add(this.deletebtn);
             this.Controls.Add(this.updatebtn);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.addbtn);
             this.Controls.Add(this.dataGridView1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Student_DEtails";
             this.Text = "Student Details";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -307,11 +425,9 @@ namespace Phila_Skhosana_MileStone_1
 
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button addbtn;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button updatebtn;
         private System.Windows.Forms.Button deletebtn;
         private System.Windows.Forms.Button viewbtn;
-        private System.Windows.Forms.TextBox studentNUmtxt;
         private System.Windows.Forms.TextBox nametxt;
         private System.Windows.Forms.TextBox surnametxt;
         private System.Windows.Forms.TextBox phonetxt;
@@ -323,10 +439,23 @@ namespace Phila_Skhosana_MileStone_1
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox cbModuleCodes;
         private System.Windows.Forms.ComboBox cbGender;
+        private System.Windows.Forms.ComboBox cbGenderA;
+        private System.Windows.Forms.ComboBox cbModuleCodesA;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox txtAddressA;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox txtPhoneA;
+        private System.Windows.Forms.TextBox txtSurameA;
+        private System.Windows.Forms.TextBox txtNameA;
+        private System.Windows.Forms.TextBox txtStudentNumberA;
+        private System.Windows.Forms.Label label16;
     }
 }
 
