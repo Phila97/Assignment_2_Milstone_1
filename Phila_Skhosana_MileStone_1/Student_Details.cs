@@ -31,5 +31,10 @@ namespace Phila_Skhosana_MileStone_1
         {
             Environment.Exit(0);
         }
+
+        private void addbtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
