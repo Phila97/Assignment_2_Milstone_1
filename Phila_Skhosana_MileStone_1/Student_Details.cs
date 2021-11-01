@@ -128,5 +128,19 @@ namespace Phila_Skhosana_MileStone_1
                 throw;
             }
         }
+
+        private void viewbtn_Click(object sender, EventArgs e)
+        {
+            //Remove everything from update section
+            txtNameA.Text = "";
+            txtSurameA.Text = "";
+            cbGenderA.Text = "";
+            txtPhoneA.Text = "";
+            txtAddressA.Text = "";
+            cbModuleCodesA.Text = "";
+
+            //Show all the data
+            ShowInGrid();
+        }
     }
 }

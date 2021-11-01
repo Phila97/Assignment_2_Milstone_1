@@ -118,6 +118,7 @@ namespace Phila_Skhosana_MileStone_1
             this.viewbtn.TabIndex = 5;
             this.viewbtn.Text = "View";
             this.viewbtn.UseVisualStyleBackColor = true;
+            this.viewbtn.Click += new System.EventHandler(this.viewbtn_Click);
             // 
             // nametxt
             // 
