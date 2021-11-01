@@ -108,6 +108,7 @@ namespace Phila_Skhosana_MileStone_1
             this.deletebtn.TabIndex = 4;
             this.deletebtn.Text = "Delete";
             this.deletebtn.UseVisualStyleBackColor = true;
+            this.deletebtn.Click += new System.EventHandler(this.deletebtn_Click);
             // 
             // viewbtn
             // 

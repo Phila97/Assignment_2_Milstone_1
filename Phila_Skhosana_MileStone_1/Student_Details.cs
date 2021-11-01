@@ -75,7 +75,33 @@ namespace Phila_Skhosana_MileStone_1
 
         private void updatebtn_Click(object sender, EventArgs e)
         {
+            try
+            {
+                //Search db
+                string search = txtSearch.Text;
+                int search_int = Int16.Parse(search);
+                //Create datahandler
+                DataHandler dh = new DataHandler();
 
+                //Populate the text boxes
+                if (dataGridView1.SelectedRows.Count > 0)//Make sur that atleast 1 row is selected
+                {
+                    //Store the values in variables
+                    string name = txtNameA.Text;
+                    string surname = txtSurameA.Text;
+                    string gender = cbGenderA.Text;
+                    string phone = txtPhoneA.Text;
+                    string address = txtAddressA.Text;
+                    string modules_codes = cbModuleCodesA.Text;
+
+                }
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show("There was an error, make sure that you entered only numbers");
+                Console.WriteLine($"Error:{exc}");
+                throw;
+            }
         }
 
         private void label16_Click(object sender, EventArgs e)
@@ -141,6 +167,31 @@ namespace Phila_Skhosana_MileStone_1
 
             //Show all the data
             ShowInGrid();
+        }
+
+        private void deletebtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //Search db
+                string search = txtSearch.Text;
+                int search_int = Int16.Parse(search);
+                //Create datahandler
+                DataHandler dh = new DataHandler();
+
+                //Populate the text boxes
+                if (dataGridView1.SelectedRows.Count > 0)//Make sur that atleast 1 row is selected
+                {
+                    dh.Delete(search);
+                    MessageBox.Show("Successfully deleted student account");
+                }
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show("There was an error, make sure that you entered only numbers");
+                Console.WriteLine($"Error:{exc}");
+                throw;
+            }
         }
     }
 }

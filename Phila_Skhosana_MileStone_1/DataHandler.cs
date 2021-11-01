@@ -29,13 +29,22 @@ namespace Phila_Skhosana_MileStone_1
         //Search Method
         public DataSet Search(string search)
         {
-            string sql = $"SELECT * FROM tblStudents WHERE StudentNumber={search}";
-            SqlDataAdapter data_adapter = new SqlDataAdapter(sql, conn);
-            DataSet ds = new DataSet();
-            conn.Open();
-            data_adapter.Fill(ds, "tblStudents");
-            conn.Close();
-            return ds;
+            try
+            {
+                string sql = $"SELECT * FROM tblStudents WHERE StudentNumber={search}";
+                SqlDataAdapter data_adapter = new SqlDataAdapter(sql, conn);
+                DataSet ds = new DataSet();
+                conn.Open();
+                data_adapter.Fill(ds, "tblStudents");
+                conn.Close();
+                return ds;
+            }
+            catch (Exception exc)
+            {
+                Console.WriteLine($"Error: {exc}");
+                throw;
+            }
+            
         }
 
         //Insert Method
@@ -53,12 +62,39 @@ namespace Phila_Skhosana_MileStone_1
                 cmd.InsertCommand.Connection = conn;
 
                 Console.WriteLine("Student Successfully added");
+                conn.Close();
             }
             catch (Exception exc)
             {
                 Console.WriteLine($"Error: {exc}");
                 throw;
             }
+        }
+
+        //Delete Method
+        public void Delete(string search)
+        {
+            try
+            {
+                //Open the connection
+                conn.Open();
+                Console.WriteLine("Connection open");
+
+                //Query to delete
+                SqlDataAdapter cmd = new SqlDataAdapter();
+                cmd.DeleteCommand = new SqlCommand($"DELETE FROM tblStudents WHERE StudentNumber = {search}");
+                cmd.DeleteCommand.Connection = conn;
+
+                Console.WriteLine("Item Deleted");
+                //Close connection
+                conn.Close();
+            }
+            catch (Exception exc)
+            {
+                Console.WriteLine($"Error{exc}");
+                throw;
+            }
+            
         }
     }
 }
