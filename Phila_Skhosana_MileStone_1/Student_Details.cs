@@ -90,8 +90,26 @@ namespace Phila_Skhosana_MileStone_1
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            //Collect Data
-            
+            try
+            {
+                //Collect Data
+                string search = txtSearch.Text;
+                int search_int = Int16.Parse(search);
+                //Create datahandler
+                DataHandler dh = new DataHandler();
+                //Update the gridview
+                dataGridView1.DataSource = dh.Search(search);
+                dataGridView1.DataMember = "tblStudents";
+                dataGridView1.Rows[0].Selected = true;
+
+
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show("There was an error, make sure that you entered only numbers");
+                Console.WriteLine($"Error:{exc}");
+                throw;
+            }
         }
     }
 }
