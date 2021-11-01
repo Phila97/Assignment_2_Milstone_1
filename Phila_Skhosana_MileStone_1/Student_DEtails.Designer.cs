@@ -244,7 +244,7 @@ namespace Phila_Skhosana_MileStone_1
             "Male",
             "Female",
             "Other"});
-            this.cbGenderA.Location = new System.Drawing.Point(977, 209);
+            this.cbGenderA.Location = new System.Drawing.Point(977, 171);
             this.cbGenderA.Name = "cbGenderA";
             this.cbGenderA.Size = new System.Drawing.Size(188, 23);
             this.cbGenderA.TabIndex = 38;
@@ -256,7 +256,7 @@ namespace Phila_Skhosana_MileStone_1
             "BCom",
             "DIT",
             "CIT"});
-            this.cbModuleCodesA.Location = new System.Drawing.Point(977, 323);
+            this.cbModuleCodesA.Location = new System.Drawing.Point(977, 285);
             this.cbModuleCodesA.Name = "cbModuleCodesA";
             this.cbModuleCodesA.Size = new System.Drawing.Size(188, 23);
             this.cbModuleCodesA.TabIndex = 37;
@@ -264,7 +264,7 @@ namespace Phila_Skhosana_MileStone_1
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(844, 375);
+            this.label9.Location = new System.Drawing.Point(844, 337);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(78, 15);
             this.label9.TabIndex = 36;
@@ -273,7 +273,7 @@ namespace Phila_Skhosana_MileStone_1
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(842, 331);
+            this.label10.Location = new System.Drawing.Point(842, 293);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(95, 15);
             this.label10.TabIndex = 35;
@@ -282,7 +282,7 @@ namespace Phila_Skhosana_MileStone_1
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(842, 295);
+            this.label11.Location = new System.Drawing.Point(842, 257);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(55, 15);
             this.label11.TabIndex = 34;
@@ -290,7 +290,7 @@ namespace Phila_Skhosana_MileStone_1
             // 
             // txtAddressA
             // 
-            this.txtAddressA.Location = new System.Drawing.Point(977, 290);
+            this.txtAddressA.Location = new System.Drawing.Point(977, 252);
             this.txtAddressA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtAddressA.Name = "txtAddressA";
             this.txtAddressA.Size = new System.Drawing.Size(188, 23);
@@ -299,7 +299,7 @@ namespace Phila_Skhosana_MileStone_1
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(844, 256);
+            this.label12.Location = new System.Drawing.Point(844, 218);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(47, 15);
             this.label12.TabIndex = 32;
@@ -308,7 +308,7 @@ namespace Phila_Skhosana_MileStone_1
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(842, 212);
+            this.label13.Location = new System.Drawing.Point(842, 174);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(51, 15);
             this.label13.TabIndex = 31;
@@ -317,7 +317,7 @@ namespace Phila_Skhosana_MileStone_1
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(842, 176);
+            this.label14.Location = new System.Drawing.Point(842, 138);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(60, 15);
             this.label14.TabIndex = 30;
@@ -326,7 +326,7 @@ namespace Phila_Skhosana_MileStone_1
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(842, 140);
+            this.label15.Location = new System.Drawing.Point(842, 102);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(45, 15);
             this.label15.TabIndex = 29;
@@ -334,7 +334,7 @@ namespace Phila_Skhosana_MileStone_1
             // 
             // txtPhoneA
             // 
-            this.txtPhoneA.Location = new System.Drawing.Point(977, 251);
+            this.txtPhoneA.Location = new System.Drawing.Point(977, 213);
             this.txtPhoneA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPhoneA.Name = "txtPhoneA";
             this.txtPhoneA.Size = new System.Drawing.Size(188, 23);
@@ -342,7 +342,7 @@ namespace Phila_Skhosana_MileStone_1
             // 
             // txtSurameA
             // 
-            this.txtSurameA.Location = new System.Drawing.Point(977, 171);
+            this.txtSurameA.Location = new System.Drawing.Point(977, 133);
             this.txtSurameA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSurameA.Name = "txtSurameA";
             this.txtSurameA.Size = new System.Drawing.Size(188, 23);
@@ -350,7 +350,7 @@ namespace Phila_Skhosana_MileStone_1
             // 
             // txtNameA
             // 
-            this.txtNameA.Location = new System.Drawing.Point(977, 135);
+            this.txtNameA.Location = new System.Drawing.Point(977, 97);
             this.txtNameA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNameA.Name = "txtNameA";
             this.txtNameA.Size = new System.Drawing.Size(188, 23);
@@ -358,21 +358,22 @@ namespace Phila_Skhosana_MileStone_1
             // 
             // txtStudentNumberA
             // 
-            this.txtStudentNumberA.Enabled = false;
-            this.txtStudentNumberA.Location = new System.Drawing.Point(977, 92);
+            this.txtStudentNumberA.Location = new System.Drawing.Point(844, 49);
             this.txtStudentNumberA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtStudentNumberA.Name = "txtStudentNumberA";
-            this.txtStudentNumberA.Size = new System.Drawing.Size(188, 23);
+            this.txtStudentNumberA.Size = new System.Drawing.Size(321, 23);
             this.txtStudentNumberA.TabIndex = 25;
+            this.txtStudentNumberA.TextChanged += new System.EventHandler(this.txtStudentNumberA_TextChanged);
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(842, 97);
+            this.label16.Location = new System.Drawing.Point(842, 22);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(101, 15);
+            this.label16.Size = new System.Drawing.Size(133, 15);
             this.label16.TabIndex = 24;
-            this.label16.Text = "Student Number :";
+            this.label16.Text = "Search Student Number";
+            this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
             // Student_DEtails
             // 

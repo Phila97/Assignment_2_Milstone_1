@@ -77,5 +77,15 @@ namespace Phila_Skhosana_MileStone_1
         {
 
         }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtStudentNumberA_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
