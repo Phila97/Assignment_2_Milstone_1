@@ -52,17 +52,35 @@ namespace Phila_Skhosana_MileStone_1
         {
             try
             {
+                string sql = $"INSERT INTO tblStudents (FirstName, LastName, Gender, Phone, Address, ModulesCodes) VALUES(@first_name, @last_name, @gender, @phone, @address, @module_code)";
+                using (conn)
+                {
+                    conn.Open();
+                    using(SqlCommand cmd = new SqlCommand(sql, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@first_name", first_name);
+                        cmd.Parameters.AddWithValue("@last_name", last_name);
+                        cmd.Parameters.AddWithValue("@gender", gender);
+                        cmd.Parameters.AddWithValue("@phone", phone);
+                        cmd.Parameters.AddWithValue("@address", address);
+                        cmd.Parameters.AddWithValue("@module_code", module_code);
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+                /*
                 //Open the connection
                 conn.Open();
                 Console.WriteLine("Connection Open");
 
                 //Query the DB To insert
-                SqlDataAdapter cmd = new SqlDataAdapter();
-                cmd.InsertCommand = new SqlCommand($"INSERT INTO tblStudents (FirstName, LastName, Gender, Phone, Address, Address, ModulesCodes) VALUES({first_name}, {last_name}, {gender}, {phone}, {address}, {module_code})");
-                cmd.InsertCommand.Connection = conn;
-
+                //SqlDataAdapter cmd = new SqlDataAdapter();
+                string sql = $"INSERT INTO tblStudents (FirstName, LastName, Gender, Phone, Address, Address, ModulesCodes) VALUES({first_name}, {last_name}, {gender}, {phone}, {address}, {module_code})";
+                //cmd.InsertCommand.Connection = conn;
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                cmd.ExecuteNonQuery();
                 Console.WriteLine("Student Successfully added");
                 conn.Close();
+                */
             }
             catch (Exception exc)
             {

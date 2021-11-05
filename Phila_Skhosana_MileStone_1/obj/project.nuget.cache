@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "B5IeMly9trVMSRHV0qbN/aZj5k3qagyiFaaLSk9dxWpz9j8gu+ux1oqVmu6/vRCbk+NVrlyQGWkzY7jExcRx0Q==",
+  "dgSpecHash": "6r65jiWISf0SFquc2APMPANehIniGw1cViKaZ7CIlA4R8Hc4bnPchSnaBtuvVqVPrHpC16vZU4FzbXwJYuXn8Q==",
   "success": true,
-  "projectFilePath": "Z:\\PRG252\\Assignement\\Assignment_2_Milstone_1\\Phila_Skhosana_MileStone_1\\Phila_Skhosana_MileStone_1.csproj",
+  "projectFilePath": "Z:\\Assignment_2_Milstone_1\\Phila_Skhosana_MileStone_1\\Phila_Skhosana_MileStone_1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\27627\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\27627\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

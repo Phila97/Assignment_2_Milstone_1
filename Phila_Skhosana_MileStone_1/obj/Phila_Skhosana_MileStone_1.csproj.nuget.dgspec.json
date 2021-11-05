@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "Z:\\PRG252\\Assignement\\Assignment_2_Milstone_1\\Phila_Skhosana_MileStone_1\\Phila_Skhosana_MileStone_1.csproj": {}
+    "Z:\\Assignment_2_Milstone_1\\Phila_Skhosana_MileStone_1\\Phila_Skhosana_MileStone_1.csproj": {}
   },
   "projects": {
-    "Z:\\PRG252\\Assignement\\Assignment_2_Milstone_1\\Phila_Skhosana_MileStone_1\\Phila_Skhosana_MileStone_1.csproj": {
+    "Z:\\Assignment_2_Milstone_1\\Phila_Skhosana_MileStone_1\\Phila_Skhosana_MileStone_1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\PRG252\\Assignement\\Assignment_2_Milstone_1\\Phila_Skhosana_MileStone_1\\Phila_Skhosana_MileStone_1.csproj",
+        "projectUniqueName": "Z:\\Assignment_2_Milstone_1\\Phila_Skhosana_MileStone_1\\Phila_Skhosana_MileStone_1.csproj",
         "projectName": "Phila_Skhosana_MileStone_1",
-        "projectPath": "Z:\\PRG252\\Assignement\\Assignment_2_Milstone_1\\Phila_Skhosana_MileStone_1\\Phila_Skhosana_MileStone_1.csproj",
+        "projectPath": "Z:\\Assignment_2_Milstone_1\\Phila_Skhosana_MileStone_1\\Phila_Skhosana_MileStone_1.csproj",
         "packagesPath": "C:\\Users\\27627\\.nuget\\packages\\",
-        "outputPath": "Z:\\PRG252\\Assignement\\Assignment_2_Milstone_1\\Phila_Skhosana_MileStone_1\\obj\\",
+        "outputPath": "Z:\\Assignment_2_Milstone_1\\Phila_Skhosana_MileStone_1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\27627\\AppData\\Roaming\\NuGet\\NuGet.Config",
