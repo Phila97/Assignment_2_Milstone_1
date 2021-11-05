@@ -67,20 +67,7 @@ namespace Phila_Skhosana_MileStone_1
                         cmd.ExecuteNonQuery();
                     }
                 }
-                /*
-                //Open the connection
-                conn.Open();
-                Console.WriteLine("Connection Open");
-
-                //Query the DB To insert
-                //SqlDataAdapter cmd = new SqlDataAdapter();
-                string sql = $"INSERT INTO tblStudents (FirstName, LastName, Gender, Phone, Address, Address, ModulesCodes) VALUES({first_name}, {last_name}, {gender}, {phone}, {address}, {module_code})";
-                //cmd.InsertCommand.Connection = conn;
-                SqlCommand cmd = new SqlCommand(sql, conn);
-                cmd.ExecuteNonQuery();
-                Console.WriteLine("Student Successfully added");
-                conn.Close();
-                */
+                
             }
             catch (Exception exc)
             {
@@ -94,18 +81,16 @@ namespace Phila_Skhosana_MileStone_1
         {
             try
             {
-                //Open the connection
-                conn.Open();
-                Console.WriteLine("Connection open");
-
-                //Query to delete
-                SqlDataAdapter cmd = new SqlDataAdapter();
-                cmd.DeleteCommand = new SqlCommand($"DELETE FROM tblStudents WHERE StudentNumber = {search}");
-                cmd.DeleteCommand.Connection = conn;
-
-                Console.WriteLine("Item Deleted");
-                //Close connection
-                conn.Close();
+                string sql = $"DELETE FROM tblStudents WHERE StudentNumber = @search";
+                using (conn)
+                {
+                    conn.Open();
+                    using (SqlCommand cmd = new SqlCommand(sql, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@search", search);
+                        cmd.ExecuteNonQuery();
+                    }
+                }
             }
             catch (Exception exc)
             {
@@ -120,6 +105,7 @@ namespace Phila_Skhosana_MileStone_1
         {
             try
             {
+                /*
                 //Open connection
                 conn.Open();
                 Console.WriteLine("Connection open");
@@ -128,6 +114,25 @@ namespace Phila_Skhosana_MileStone_1
                 SqlDataAdapter cmd = new SqlDataAdapter();
                 cmd.UpdateCommand = new SqlCommand($"UPDATE tblStudents SET FirstName = {first_name}, LastName = {last_name}, Gender = {gender}, Phone = {phone}, Address = {address}, ModulesCodes = {module_code} WHERE StudentNumber = {search}");
                 cmd.UpdateCommand.Connection = conn;
+                */
+                string sql = $"UPDATE tblStudents SET FirstName = @first_name, LastName = @last_name, Gender = @gender, Phone = @phone, Address = @address, ModulesCodes = @module_code WHERE StudentNumber = @search";
+                using (conn)
+                {
+                    conn.Open();
+                    using (SqlCommand cmd = new SqlCommand(sql, conn))
+                    {
+                        //Add Parameters
+                        cmd.Parameters.AddWithValue("@first_name", first_name);
+                        cmd.Parameters.AddWithValue("@last_name", last_name);
+                        cmd.Parameters.AddWithValue("@gender", gender);
+                        cmd.Parameters.AddWithValue("@phone", phone);
+                        cmd.Parameters.AddWithValue("@address", address);
+                        cmd.Parameters.AddWithValue("@module_code", module_code);
+                        cmd.Parameters.AddWithValue("@search", search);
+                        //Execute
+                        cmd.ExecuteNonQuery();
+                    }
+                }
 
                 Console.Write("Update was successfull");
             }

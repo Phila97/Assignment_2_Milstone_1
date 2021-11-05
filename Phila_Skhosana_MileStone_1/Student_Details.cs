@@ -94,6 +94,12 @@ namespace Phila_Skhosana_MileStone_1
                     string address = txtAddressA.Text;
                     string modules_codes = cbModuleCodesA.Text;
 
+                    //Insert the data using the datahandler insert procedure
+                    dh.Update(search, name, surname, gender, phone, address, modules_codes);
+
+                    //User feedback
+                    MessageBox.Show("Successfully updated data");
+                    ShowInGrid();
                 }
             }
             catch (Exception exc)
@@ -184,6 +190,8 @@ namespace Phila_Skhosana_MileStone_1
                 {
                     dh.Delete(search);
                     MessageBox.Show("Successfully deleted student account");
+                    //Show all the data
+                    ShowInGrid();
                 }
             }
             catch (Exception exc)
